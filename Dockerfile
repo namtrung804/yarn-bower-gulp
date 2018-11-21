@@ -8,6 +8,6 @@ RUN apt-get update && apt-get install -y curl apt-transport-https && \
     echo "deb https://dl.yarnpkg.com/debian/ stable main" | tee /etc/apt/sources.list.d/yarn.list && \
     apt-get update && apt-get install -y yarn && yarn -v
 
-RUN npm install -g bower gulp
+RUN npm install -g bower gulp svgo
 
 WORKDIR /app
